@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: slategrey;
+  margin: 0px;
+}
+header {
+  background-color: hsl(0, 0%, 86%);
+  text-align: center;
+  padding: 25px;
+}
+.navbar {
+  background-color: hsl(0, 0%, 15%);
+  height: 50px;
+}
+aside {
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+section {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+article {
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+footer {
+  display: block;
+  clear: both;
+  background-color: hsl(0, 0%, 86%);
+  text-align: center;
+  padding: 25px;
+}
+@media screen and (max-width: 600px){
+  aside, section, article {
+    width: 100%;
+  }
+}
+.gallery {
+  display: inline-block;
+  border: 1px solid hsl(0, 0%, 65%);
+  margin: 5px;
+  width: 200px;
+}
+.gallery .desc {
+  padding: 10px;
+  text-align: center;
+}
+.gallery:hover {
+  border: 1px solid hsl(0, 0%, 20%);
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.icons {
+  text-align: center;
+}
+.icons a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+.fa-solid.fa-train.fa-5x {
+  color: rgb(212, 209, 36);
+}
+.fa-solid.fa-train.fa-5x:hover {
+  color: rgb(177, 174, 3);
+}
+.fa-solid.fa-motorcycle.fa-5x {
+  color: rgb(238, 150, 49)
+}
+.fa-solid.fa-motorcycle.fa-5x:hover {
+  color: rgb(190, 110, 17)
+}
+.fa-solid.fa-sailboat.fa-5x {
+  color: rgb(36, 71, 228);
+}
+.fa-solid.fa-sailboat.fa-5x:hover {
+  color: rgb(5, 36, 172);
+}
+.fa-solid.fa-plane.fa-5x {
+  color: rgb(240, 37, 37);
+}
+.fa-solid.fa-plane.fa-5x:hover {
+  color: rgb(179, 6, 6);
+}
+.boc {
+  width: 250px;
+  height: 250px;
+  border: 5px solid;
+  font-size: 13em;
+  text-align: center;
+
+  transform: translateX(100px) rotateZ(45deg) scale(0.5);
+}
+#box5 {
+  background-color: hsl(120, 100%, 70%);
+
+  /*transform: translate(50px, 50px); translateX()/translateY()*/ 
+  /*transform: rotateZ(90deg); rotateX()/rotateY()/rotateZ()*/
+  /*transform: scale(2.1, 2); scaleX()/scaleY()*/
+  /*transform: skew(135deg,90deg); skewX()/skewY()*/
+  /*transform: translateX(100%) rotateZ(90deg) scale(0.5);*/
+}
+#box6 {
+  background-color: hsl(323, 100%, 70%);
+}
+#box7 {
+  background-color: hsl(226, 100%, 70%);
+}
+.pikachu {
+  transform: translateX(100%) rotateZ(180deg) scaleX(2);
+}
+#box8 {
+  width: 250px;
+  height: 250px;
+  background-color: hsl(0, 100%, 62%);
+  font-size: 13em;
+  text-align: center;
+  animation-name: slideLeft;
+  animation-duration:2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+/*#box8:hover {
+  animation-name: colorChange;
+  animation-duration:2s;
+} */
+.pokeball {
+  animation-name: slideLeft;
+  animation-duration:2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes slideLeft {
+  from{transform: translateX(300%);}
+}
+@keyframes slideRight {
+  to{transform: translateX(300%);}
+}
+@keyframes slideUp {
+  from{transform: translateY(300%);}
+}
+@keyframes slideDown {
+  to{transform: translateY(300%);}
+}
+@keyframes rotate {
+  100%{transform: rotateZ(360deg);}
+}
+@keyframes grow {
+  100%{transform: scale(2, 2);}
+}
+@keyframes shrink {
+  50%{transform: scale(0.5, 0.5);}
+}
+@keyframes fade {
+  50%{opacity: 0;}
+}
+@keyframes colorChange {
+  0%{background-color: hsl(0, 100%, 62%);}
+  20%{background-color: hsl(36, 100%, 62%);}
+  40%{background-color: hsl(66, 100%, 62%);}
+  60%{background-color: hsl(108, 100%, 62%);}
+  80%{background-color: hsl(209, 100%, 62%);}
+  100%{background-color: hsl(283, 100%, 62%);}
+}
+@keyframes glow {
+  50%{box-shadow: 0 0 50px rgb(253, 253, 11);}
+}
+.container {
+  display: flex;
+  /*flex-direction: column;
+  justify-content: space-around;  x-axis
+  align-items: flex-end;  y-axis*/
+  border: 10px solid black;
+  height: 90vh;
+  /*flex-wrap: wrap;  flex-wrap use with align-content
+  align-content: flex-start;*/
+  /*column-gap: 1em;
+  row-gap: 1em;*/
+}
+.box {
+  width: 150px;
+  height: 150px;
+  font-size: 8em;
+  text-align: center;
+  border-radius: 15px;
+}
+/*align-self and order can put in any #box1-4*/
+#box1 {
+  background-color: hsl(0, 100%, 70%);
+  align-self: center; 
+}
+#box2 {
+  background-color: hsl(61, 100%, 70%);
+  order: 1;
+}
+#box3 {
+  background-color: hsl(123, 100%, 70%);
+}
+#box4 {
+  background-color: hsl(204, 100%, 70%);
+}

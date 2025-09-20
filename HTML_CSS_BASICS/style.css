@@ -1,0 +1,207 @@
+/*Extenal CSS*/
+@font-face {
+  src: url(Fonts/Zain-Light.ttf);
+  font-family: Zain-Light;
+}
+body {
+  background-color: slategrey;
+  margin: 0px;
+}
+.mine {
+  color: brown;
+  font-family: Zain-Light;
+}
+#p1 {
+  color: rgb(96, 73, 133);
+}
+#p2 {
+  color: tomato;
+}
+#p3 {
+  color: #bf6c13;
+}
+#p4 {
+  color: hsl(120, 66%, 48%);
+}
+.odd {
+  font-style: italic;
+}
+.even {
+  font-weight: bold;
+}
+.first-name {
+  color: #bf13a8;
+  font-family: 'Special Elite', Verdana, Tahoma;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px red, -3px -3px 5px black;
+}
+#boc1 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 3px 3px 5px;
+}
+.desc {
+  font-family: 'Lucida Sans', 'Special Elite';
+  font-size: 1em;
+  font-weight: normal;
+}
+.second-name {
+  color: #bf13a8;
+  font-family: 'Special Elite', Verdana, Tahoma;
+  border: 3px solid white;
+  border-radius: 6px;
+}
+.sec-desc {
+  border-bottom: 3px solid black;
+  border-top: 3px dashed red;
+  border-left: 3px dotted yellow;
+  border-right: 3px solid orange;
+  border-radius: 10px;
+}
+.box {
+  border: 5px solid;
+  font-size: 5em;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+#box2 {
+  background-color: hsl(0, 77%, 65%);
+  /*margin: 50px 1px 5px 10px;*/
+}
+#box3 {
+  background-color: hsl(244, 77%, 65%);
+}
+.pokemon {
+  border: 3px solid;
+  display: flow-root;
+}
+#img1 {
+  float: left;
+  margin-right: 10px;
+}
+#img2 {
+  float: right;
+  margin-left: 10px;
+}
+.overflow {
+  border: 1px solid;
+  height: 40px;
+  overflow: auto;
+}
+.div {
+  background-color: hsl(0, 77%, 65%);
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+}
+.span {
+  background-color: hsl(244, 77%, 65%);
+  width: 100px;
+  height: 50px;
+  display: inline;
+}
+.container {
+  background-color: hsl(0, 0%, 27%);
+  height: 45vh;
+}
+.height-width {
+  background-color: white;
+  border: 2px solid;
+  height: auto;
+  width: 50%;
+  padding: 25px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  min-width: 75%;
+}
+#position {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(41, 41, 153);  
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}
+#position2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(153, 41, 47);  
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.background-img {
+  background-image: url(Images/mercedes\ benz\ g-class.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#container2 {
+  border: 2px solid;
+}
+#container2 + p {
+  background-color: yellow;
+}
+a:link {
+  color: black;
+}
+.song:hover {
+  color: rgba(138, 0, 0, 0.541);
+  font-size: 1.1em;
+}
+.song:active {
+  color: yellow;
+  font-size: 1.1em;
+}
+.song:visited {
+  color: rgb(26, 218, 36);
+}
+#number:hover {
+  background-color: yellowgreen;
+}
+#number:not(:hover) {
+  background-color: rgb(129, 146, 96);
+}
+#number:nth-child(3n+1) {
+  color: blue;
+}
+#greeting p{
+  background-color: aqua;
+  padding: 10px;
+  display: none;
+}
+#greeting:hover p{
+  display: block;
+}
+.hello::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+.pseudo-elem::first-line {
+  background-color: palevioletred;
+}
+.pseudo-elem::selection {
+  color: rgb(0, 170, 0);
+  background-color: rgb(70, 69, 69);
+}
+/*#fruit li::before {
+  
+}*/
+#apple::after {
+  content: "🍎";
+}
+#orange::after {
+  content: "🍊";
+}
+#banana::after {
+  content: "🍌";
+}
+#fruit li::marker {
+  content: "✅";
+  font-size: 1.2em;
+}

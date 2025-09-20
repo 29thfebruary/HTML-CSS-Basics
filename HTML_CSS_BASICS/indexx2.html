@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More to CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    /*Internal CSS
+    body {
+      background-color: black;
+    }
+    h1 {
+      color: white;
+    }
+    #p1 {
+      color: purple;
+    }
+    #p2 {
+      color: red;
+    }
+    #p3 {
+      color: orange;
+    }
+    #p4 {
+      color: green;
+    }*/
+  </style>
+</head>
+<body>
+  <!--Inline CSS-->
+  <h1 class="mine">This is my website</h1>
+
+  <p style="color: lightgoldenrodyellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi quia aperiam maxime laborum fugiat incidunt amet adipisci odit. Expedita quisquam vero esse ratione blanditiis facere facilis id fugit?</p>
+  <p style="color: lightgoldenrodyellow;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nulla laudantium error ullam maiores, voluptatum ad quae delectus voluptatem dolor quod incidunt, omnis consequatur expedita molestias accusantium libero! Itaque, consectetur!</p>
+  <hr style="color: white;">
+
+  <p id="p1" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi quia aperiam maxime laborum fugiat incidunt amet adipisci odit. Expedita quisquam vero esse ratione blanditiis facere facilis id fugit?</p>
+  <p id="p2" class="even">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nulla laudantium error ullam maiores, voluptatum ad quae delectus voluptatem dolor quod incidunt, omnis consequatur expedita molestias accusantium libero! Itaque, consectetur!</p>
+  <p id="p3" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusamus quia nostrum placeat tempore ad nisi voluptates iste quibusdam, aliquam ipsam vel velit quisquam amet culpa voluptatibus ullam consequatur dicta.</p>
+  <p id="p4" class="even">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos maxime, odit dolorem distinctio ipsa natus totam iure eligendi modi, sapiente vitae tempora repudiandae numquam iste quaerat vero facilis illum quis!</p>
+  <hr style="color: white;">
+
+  <!--text and box shadows-->
+  <h1 class="first-name">Athirah</h1>
+  <div id="boc1"></div>
+  <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facere libero odio dolorum praesentium quisquam reiciendis deserunt necessitatibus distinctio fugit rem dolores corporis possimus, temporibus est quaerat quas ipsa qui!</p>
+  <hr style="color: white;">
+
+  <!--border-->
+  <h1 class="second-name">Damia</h1>
+  <p class="sec-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa quam assumenda deleniti dicta obcaecati. Corrupti saepe illum id unde delectus, blanditiis asperiores provident. Delectus a deleniti dignissimos assumenda amet?</p>
+  <hr style="color: white;">
+
+  <!--margin = space around an element-->
+  <div class="box" id="box2">Box 2</div>
+  <div class="box" id="box3">Box 3</div>
+  <hr style="color: white;">
+
+  <!--float = allows other elements to flow around it-->
+  <div class="pokemon">
+    <img src="Images/pokeball.png" height="150px" id="img1">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa quam assumenda deleniti dicta obcaecati. Corrupti saepe illum id unde delectus, blanditiis asperiores provident.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum culpa quam assumenda deleniti dicta obcaecati. Corrupti saepe illum id unde delectus, blanditiis asperiores provident.</p>
+  <img src="Images/pikachu.png" height="150px" id="img2">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum culpa quam assumenda deleniti dicta obcaecati. Corrupti saepe illum id unde delectus, blanditiis asperiores provident.</p>
+  </div>
+  <hr style="color: white;">
+
+  <!--overflow: property that sets the desired behavior when content does not fit in the parent element box (overflows)
+  1. overflow: visible
+  2. overflow: hidden
+  3. overflow: scroll
+  4. overflow: auto
+  5. overflow: clip-->
+  <p class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium earum ullam, numquam eveniet praesentium est facere quidem culpa aspernatur neque nisi distinctio nulla. Accusamus rem quidem porro illum magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab amet rem, nulla ducimus laudantium, tempore autem, saepe a accusamus delectus expedita hic reiciendis magni provident. Aliquid vel tempore maiores voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem aliquam, doloribus, repellendus corrupti veritatis aperiam laudantium sint quisquam modi vel cumque incidunt architecto ut tempora nulla quam explicabo eos amet.</p>
+  <hr style="color: white;">
+
+  <!--display = property specifies if/how an element is displayed
+  1. block-level = start on a new line, take up the full width available (h1-h6, div, p, form, header, footer)
+  2. inline = do not start on a new line, width is limited to what is needed (span, a, img)-->
+  <div class="div">div</div>
+  <span class="span">span</span>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla repellat, dolorum assumenda dignissimos.
+  <hr style="color: white;">
+
+  <div class="container">
+    <div class="height-width">
+      <h2>This is #1</h2>
+    </div>
+    <div class="height-width">
+      <h2>This is #2</h2>
+    </div>
+  </div>
+  <hr style="color: white;">
+
+  <!--background-image-->
+  <div class="background-img">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste earum temporibus ipsum libero facilis dignissimos nulla debitis sunt. Esse dolor error libero earum iste est nihil vitae soluta aspernatur!</p>
+  </div>
+  <hr style="color: white;">
+
+  <!--combinator = explains the relationship between listed selectors
+  1.   = descendant
+  2. > = child
+  3. ~ = general sibling
+  4. + = adjacent sibling-->
+  
+  <div id="container2">
+    <p>This is #1</p>
+    <p>This is #2</p>
+    <div>
+      <p>This is #3</p>
+    </div>
+  </div>
+  <p>This is #4</p>
+  <p>This is #5</p>
+  <hr style="color: white;">
+
+  <!--pseudo-classes-->
+  <a href="https://genius.com/Justin-bieber-daisies-lyrics" class="song">DAISIES</a>
+
+  <ul>
+    <li id="number">This is #1</li>
+    <li id="number">This is #2</li>
+    <li id="number">This is #3</li>
+    <li id="number">This is #4</li>
+    <li id="number">This is #5</li>
+    <li id="number">This is #6</li>
+    <li id="number">This is #7</li>
+    <li id="number">This is #8</li>
+    <li id="number">This is #9</li>
+  </ul>
+  <div id="greeting">
+    Hover Here
+    <p>Hello</p>
+  </div>
+  <hr style="color: white;">
+
+  <!--pseudo-elements = keyword added after a selector that's used to style a specific parts of an element
+  1. selector::pseudo-element-->
+  <h1 class="hello">Hello</h1>
+  <p class="pseudo-elem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates natus veniam laboriosam ipsa! Tempora, quia? Molestias recusandae architecto aperiam, at, fugiat veritatis error eveniet suscipit beatae nihil consequatur autem? Sapiente.</p>
+  <ul id="fruit">
+    <li id="apple">Apple</li>
+    <li id="orange">Orange</li>
+    <li id="banana">Banana</li>
+  </ul>
+</body>
+</html>

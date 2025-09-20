@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favorite Language</h1>
+    <script>
+        function enter() {
+            var language = document.getElementById("language").value;
+            document.write('You have selected ' + language);
+        }
+    </script>
+    <h2>Which Language You Like learning</h2>
+    <select name="language" id="language">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="php">php</option>
+    </select>
+    <br><br>
+    <button onclick="enter()">Submit</button>
+</body>
+</html>

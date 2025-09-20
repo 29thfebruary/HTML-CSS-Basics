@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<title>Javascript</title>
+</head>
+
+<body>
+
+<script language=javascript>
+
+var a = 12; //if we put number less than 10, the page will show nothing
+if (a > 10){
+	alert(a);
+}
+
+for (i=0;i<5;i++)
+{
+	document.write("This is iteration " + i + "<br>");
+}
+
+var a = new Array (5);
+a[0] = "cat";
+a[1] = "dog";
+a[2] = 95;
+a[3] = 100;
+a[4] = "ali kicap";
+document.write(a[4]);
+
+var a = ["dog", "cat", 3, 5, false];
+document.write("<br>" + a[3]);
+
+function ouch()
+{
+	alert("Ouch...!");
+}
+
+function enter()
+{
+	var fname = document.getElementById("fname").value;
+	var lname = document.getElementById("lname").value;
+
+	document.write("<br>Your name is " + fname + " " + lname);
+}
+
+function chooseLan()
+{
+	var HTML = document.borang.language[0].selected;
+	if(HTML)
+		{document.write("You love " + HTML)}
+}
+</script>
+
+<br>
+When the button below is clicked, an action will be executed:<br><br>
+<input type="button" value="Pinch me!!" onmouseover="ouch()">
+
+<form name="borang">
+	First Name: <input type="text" name="fname" id="fname"><br><br>
+	Last Name: <input type="text" name="lname" id="lname"><br><br>
+	<input type="button" value="enter" onClick="enter()">
+	<br>Which language you've learned so far is your favourite? 
+	<select name=language>
+		<option value=HTML>HTML</option>
+		<option value=JavaScript>JavaScript</option>
+		<option value=PHP>PHP</option>
+	</select>
+	<input type="button" value="choose" onClick="chooseLan()">
+</form>
+</body>
+</html>

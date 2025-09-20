@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<title>Learning Process</title>
+<script language=Javascript> //single line comment
+/*multiline 
+comment*/
+
+alert("Nihao ma? Huanying xuesheng!"); //use alert for popup message
+
+</script>
+</head>
+
+<body bgcolor=#6a5acd><!--background="images/bg1.jpg"-->
+
+<script language=javascript>
+
+var nama = "Adila";
+for( var i=0; i<5; i++)
+{
+document.write("<h1>Hello "+ nama + "</h1>");
+}
+var result = confirm("Are you sure?");
+if(result) {
+	document.write("You clicked \"OK\" button!");
+} else {
+	document.write("You clicked \"CANCEL\" button!");
+}
+var age = prompt("Input your birth year");
+age = 2024 - age;
+document.write("\nYour age in 2024: " + age);
+
+function ouch()
+{
+	alert("Ouch...!");
+}
+</script>
+<h1><b><i>Welcome to CSC264 Course</i></b>
+<font face=Cambria color=blue><p>MOBILE WEB PROGRAMMING</h1></p></font>
+<img SRC="Images/MAFABiz Enterprise logo (white background).png" border=20 alt="MAFABiz Enterprise">
+<br>Welcome to
+<p><b>MY HOMEPAGE</b></p>
+
+<!--link-->
+<ul type=square>
+<li><a href="https://www.uitm.edu.my/index.php/ms/">UiTM Homepage</a>
+<li><a href="https://www.w3schools.com/html/">W3School</a>
+<li><a href="">My Education</a>
+</ul>
+
+<ol type=a start=3>
+<li><a href="https://www.uitm.edu.my/index.php/ms/">UiTM Homepage</a>
+<li><a href="https://www.w3schools.com/html/">W3School</a>
+</ol>
+
+<!--table-->
+<table bgcolor=green border=4 cellpadding=3 cellspacing=5>
+	<tr bgcolor=red>
+		<th>FACULTY</th>
+		<th>COURSE</th>
+		<th>LECTURER</th>
+		<th>CREDIT HOURS</th>
+		<th>CONTENT</th>
+		<th>PLACE</th>
+	</tr>
+	<tr>
+		<td align=center rowspan=3>CS110</td>
+	</tr>
+	<tr>
+		<td align=center>CSC264</td>
+		<td align=center>PUAN ATHIRAH</td>
+		<td align=center>4</td>
+		<td align=center colspan=2>UFUTURE</td>
+	</tr>
+	<tr>
+		<td align=center>ISP250</td>
+		<td align=center>PUAN AYUNI</td>
+		<td align=center>4</td>
+		<td align=center colspan=2>UFUTURE</td>
+	</tr>
+</table>
+
+<!--form-->
+<form>
+<br>Nama: <input type=text name=nama>
+<br>No. Matrik: <input type=text name=matrik>
+<br>Jantina: 
+<input type=radio name=jantina value=L>LELAKI
+<input type=radio name=jantina value=P>PEREMPUAN
+<br>Hobi: 
+<input type=checkbox name=hobi1 value=hiking>HIKING
+<input type=checkbox name=hobi2 value=running>RUNNING
+<input type=checkbox name=hobi3 value=cycling>CYCLING
+<input type=checkbox name=hobi4 value=swimming>SWIMMING
+<br>Kata Laluan: <input type=password name=kataLaluan>
+<br>Program Kod: 
+<select name=programKod>
+	<option value=CS110>CS110</option>
+	<option value=CS110>CS112</option>
+	<option value=CS113>CS113</option>
+<br><select>
+	<input type=submit value=HANTAR>
+	<input type=button value=KLIK>
+	<input type=reset value=RESET>
+</select>
+</form>
+
+<h2>Borang Daftar Masuk Kolej</h2>
+<form name=borang method=post action=>
+	<fieldset>
+		<legend>Maklumat Peribadi Pelajar</legend>
+Nama Pelajar: <input type=text name=namaPel>
+<br>No. hp: <input type=number name=nohp>
+<br>Jantina: 
+<input type=radio name=jantina value=L>Lelaki
+<input type=radio name=jantina value=P>Perempuan
+	</fieldset>
+
+	<fieldset>
+		<legend>Maklumat Keluarga Pelajar</legend>
+Nama Bapa: <input type=text name=namaBapa>
+<br>No. hp Bapa: <input type=number name=nohpBapa>
+<br>Negeri: 
+<select name=negeri>
+	<option value=Perak>PERAK</option>
+	<option value=Selangor>SELANGOR</option>
+	<option value=Kedah selected>KEDAH</option>
+	<option value=Pahang>PAHANG</option>
+</select>
+	</fieldset>
+<br><input type=submit name=hantar>
+<input type=reset name=padam>
+</form>
+
+
+<ul>
+<br><li><h2><b><a href="Javascript.html">Javascript</a></b></h2>
+</ul>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsa autem ea hic, molestias fuga exercitationem eius soluta, quod quo culpa, nihil veniam sit. Aspernatur nulla reprehenderit quos laborum animi.</p>
+
+When the button below is clicked, an action will be executed:<br><br>
+<input type="button" value="Pinch me!!" onClick="ouch()">
+
+</body>
+</html>

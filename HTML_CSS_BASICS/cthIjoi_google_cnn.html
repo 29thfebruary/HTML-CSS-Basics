@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Google or CNN</title>
+    <script>
+        function openPage() {
+        
+            const userInput = document.getElementById("inputText").value.toLowerCase();
+            let message = document.getElementById("message");
+
+            
+            message.textContent = "";
+
+        
+            if (userInput === "google") {
+                window.open("https://www.google.com", "_blank");
+                message.textContent = "You’ve opened the Google page.";
+            } else if (userInput === "cnn") {
+                window.open("https://www.cnn.com", "_blank");
+                message.textContent = "You’ve opened the CNN page.";
+            } else {
+                
+                alert("Invalid input. Please enter either 'google' or 'cnn'.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Open Google or CNN</h1>
+    <p>Enter "google" or "cnn" to open the corresponding page:</p>
+    <input type="text" id="inputText" placeholder="Enter 'google' or 'cnn'">
+    <button onclick="openPage()">Open Page</button>
+    <p id="message" style="font-weight: bold; color: green;"></p>
+</body>
+</html>

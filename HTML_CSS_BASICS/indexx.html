@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/favicons.png" type="image/png"> <!--favicons-->
+  <title>More to HTML</title>
+</head>
+<body>
+  <header style="background-color: mediumseagreen;">
+    <h1>Welcome to Athirah's Organization</h1>
+    <a href="">Home</a>
+    <a href="">About Us</a>
+    <a href="">Products</a>
+    <a href="">Contact Us</a>
+    <hr>
+  </header>
+
+  <main>
+    <!--hyperlink-->
+    <a href="https://genius.com/Justin-bieber-daisies-lyrics" title="Listen to new song from JB">CLICK ME<a>
+
+    <br>
+
+    <!--hyperlink-->
+    <a href="lyrics.html">SONG LYRICS</a>
+
+    <br>
+
+    <!--hyperlink-->
+    <a href="mailto:test@fake.com">EMAIL ME</a>
+    <br>
+
+    <!--hyperlink-->
+    <a href="https://en.wikipedia.org/wiki/Exo">
+      <!--image-->
+      <img src="Images/EXO obsession.jpg" alt="This is EXO" height="500px" width="1000px"> 
+    </a>
+    
+    <br><br>
+
+    <!--audio-->
+    <p>Catch Me If I Fall</p>
+    <audio controls autoplay muted loop>
+      <source src="Audios/Catch Me If I Fall - NEFFEX.mp3" type="audio/mpeg">
+      <source src="Audios/Catch Me If I Fall - NEFFEX.wav" type="audio/wav"> <!--backup audio-->
+    </audio>
+    <br><br>
+    <p>Dreaming On</p>
+    <audio controls>
+      <source src="Audios/Dreaming On - NEFFEX.mp3">
+    </audio>
+    <br><br>
+    <p>Losing My Mind</p>
+    <audio src="Audios/Losing My Mind - NEFFEX.mp3" controls>
+    </audio>
+    <br>
+
+    <!--video-->
+    <a target="_blank" href="https://en.wikipedia.org/wiki/PUBG_Mobile">
+      <video height="500px" width="500px" controls autoplay muted>
+      <source src="Videos/playing_game.mp4" type="video/mp4">
+      <source src="Videos/playing_game.webm" type="video/webm"> <!--backup video-->
+    </video> 
+    </a>
+    
+    <br>
+
+    <!--text formatting-->
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <u>underlined</u> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <tt>monospaced</tt> text</p>
+    <p>This is <mark style="background-color: blue;">normal</mark> text</p>
+
+    <br>
+
+    <!--GROUP TOGETHER HTML-->
+    <!-- <span> inline container to group elements for styling purposes-->
+    <!-- <div> block container to group elements for styling purposes-->
+
+    <h1><span style="background-color: tomato;">This is a span title</span></h1>
+    <h1><div style="background-color: cyan;">This is a div title</div></h1>
+
+    <p><span style="background-color: tomato;">This is a span sentence</span></p>
+    <p><div style="background-color: cyan;">This is a div sentence</div></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="background-color: tomato;">Ea quas amet in velit aliquam! Ipsum adipisci possimus, fugiat delectus iste est! Saepe fugit sequi illo libero error ut repellendus consectetur.</span></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color: cyan;">Repellendus cum reiciendis ea voluptas iste dolor accusamus inventore ullam corporis. Iure enim quibusdam praesentium! Soluta amet repellat autem tenetur cumque officiis.</div></p>
+
+    <!--Unordered List-->
+    <h4>Groceries</h4>
+    <ul>
+      <li>milk</li>
+      <li>eggs</li>
+      <li>bread</li>
+      <li>tea supplies</li>
+      <ul>
+        <li>tea bags</li>
+        <li>sugar</li>
+      </ul>
+    </ul>
+
+    <!--Ordered List-->
+    <h4>To-do List</h4>
+    <ol>
+      <li>eat breakfast</li>
+      <li>go to class</li>
+      <li>play with cat</li>
+      <li>go to work</li>
+    </ol>
+
+    <!--Description List-->
+    <h4>Mythical Creatures</h4>
+    <dl style="background-color: lightgreen; border: 1px solid;">
+      <dt>dragon</dt>
+      <dd>a mythical monster resembling a giant reptile, sometimes shown as having wings.</dd>
+      <dt>phoenix</dt>
+      <dd>a unique bird that lived for five or six centuries in the Arabian desert, after this time burning itself on a funeral pyre and rising from the ashes with renewed youth to live through another cycle.</dd>
+      <dt>vampire</dt>
+      <dd>a corpse supposed to leave its grave at night to drink the blood of the living by biting their necks with long pointed canine teeth.</dd>
+      <dt>werewolf</dt>
+      <dd>a person who changes for periods of time into a wolf, typically when there is a full moon.</dd>
+    </dl>
+
+    <!--tables-->
+    <h3>Store Hours</h3>
+    <table border="1" style="background-color: black;">
+      <tr align="center" style="background-color: lightblue;">
+        <th width="100">Sunday</th>
+        <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">Wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">Friday</th>
+        <th width="100">Saturday</th>
+      </tr>
+      <tr align="center" style="background-color: aliceblue;">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>10-2</td>
+      </tr>
+    </table>
+
+    <br><br>
+
+    <!--button-->
+    <a target="_blank" href="cthIjoi_first_lastname.html">
+      <button style="font-size: 25px; background-color: gray; color: lightblue; border-radius: 5px;">CLICK ME</button>
+    </a>
+    <br>
+    <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color: lightblue; border-radius: 5px;">GREETINGS</button>
+    <p id="greeting">Hello</p>
+
+    <!--forms-->  
+    <!--for and id should be the same-->
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Spongebob" minlength="6" maxlength="15" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" minlength="6" maxlength="15" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate"><br>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="0" max="10"><br>
+
+      <label for="title">Title:</label>
+      <label for="Mr.">Mr.</label>
+      <input type="radio" id="Mr." value="Mr." name="title">
+      <label for="Mrs.">Mrs.</label>
+      <input type="radio" id="Mrs." value="Mrs." name="title">
+      <label for="PhD.">PhD.</label>
+      <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+      <label for="payment">Payment:</label>
+      <select id="payment">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="giftcard">Giftcard</option>
+      </select><br>
+
+      <label for="subscribe">Subscribe:</label>
+      <input type="checkbox" id="subscribe"><br>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+      <label for="file">File:</label>
+      <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+      <input type="reset"><br>
+      <input type="submit">
+    </form>
+  </main>
+  
+  <footer style="background-color: mediumseagreen;">
+    <hr>
+    Author: ATHIRAH DAMIA <br>
+    &copy; copyright reserved <br>
+    <small>
+      <a href="mailto:test@fake.com">test@fake.com</a>
+    </small>
+  </footer>
+
+  <script>
+    function doSomething() {
+      document.getElementById("greeting").innerHTML = "Goodbye";
+    }
+  </script>
+</body>
+</html>
